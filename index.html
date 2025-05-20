@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CollageCraft AI - Static</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="hero" id="hero">
+    <h1>Welcome to CollageCraft AI</h1>
+    <p>Create stunning collages with the power of AI. Automatically choose themes, layouts, and colors to craft the perfect memory board for any occasion.</p>
+    <button id="getStartedBtn" class="cta-button">Get Started</button>
+  </section>
+
+  <section class="upload-section hidden" id="uploadSection">
+    <h2>Create a Photo Collage</h2>
+    <input type="file" id="photoInput" multiple accept="image/*" />
+    <div id="preview" class="collage"></div>
+
+    <div class="ai-suggestion">
+      <input type="text" id="themeInput" placeholder="Enter theme idea, e.g. love, travel, friends" />
+      <button id="suggestBtn">Get AI Suggestions</button>
+    </div>
+
+    <div id="suggestions"></div>
+  </section>
+
+  <div class="floating-collages">
+    <img src="sample1.jpg" class="float collage1" alt="Sample collage 1" />
+    <img src="sample2.jpg" class="float collage2" alt="Sample collage 2" />
+    <img src="sample3.jpg" class="float collage3" alt="Sample collage 3" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
